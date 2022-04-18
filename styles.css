@@ -54,18 +54,18 @@ header {
 main {
     grid-column: 2 / 12;
     grid-row: 2;
-    background-color: #FFF;
-	/* margin: 20px 10%; */
-	padding: 30px 20px;
 	border-radius: 20px;
-	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+
+blockquote {
+    margin-inline: 0px;
 }
 
 .display, .grid-props {
     padding: 1.5rem;
     border-radius: 16px;
-    background: linear-gradient(85deg,#434343,#262626);
-    color: #fff;
+    background-color: #fff;
+    box-shadow: 0 3px 26px 0 rgb(0 0 0 / 20%);
     transition: .2s;
     margin: 0;
 }
@@ -75,18 +75,12 @@ main {
     flex-direction: row;
 }
 
-.props {
-    grid-column: 2 / 8;
-    grid-row: 2 / 3;
-}
-
-blockquote {
-    margin-inline: 0px;
+.props, .css-code {
+    width: 50%;
 }
 
 .css-code {
-    grid-column: 4 / 6;
-    grid-row: 2 / 3;
+    padding-left: 20px;
     position: relative;
     font: var(--font-code);
     overflow-wrap: break-word;
@@ -94,7 +88,6 @@ blockquote {
 
 pre {
     padding: 1rem 2.5rem 1rem 1rem;
-    margin: 1rem 0 2rem;
     background-color: var(--code-background-block);
     border: 1px solid transparent;
     white-space: pre-wrap;
@@ -116,7 +109,6 @@ pre, code {
 }
 
 code {
-    /* border: 1px solid red; */
     width: fit-content;
 }
 
@@ -135,6 +127,7 @@ code {
 .grid-props {
     grid-column: 2 / 6;
     grid-row: 3;
+    margin-top: 10px;
 }
 
 body {
@@ -152,14 +145,33 @@ h1, h2 {
 h2 {
     grid-column: 3 / 6;
     grid-row: 3;
-    text-align: center;
-    border: 1px solid green;
+    text-align: left;
 }
 
 table {
     grid-column: 3 / 4;
     grid-row: auto;
-    border: 1px solid purple;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
 }
 
 .code-span {
