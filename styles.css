@@ -19,6 +19,7 @@ body {
     background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A );
 	background-size: 100%;
 	background-repeat: no-repeat;
+    margin: 0px;
 }
 
 body:before{
@@ -39,16 +40,14 @@ body:before{
     width: 100%;
 }
 
-header, main {
-}
-
 header {
-    grid-column: 2 / 12;
-    grid-row: 1;
+    grid-area: 1 / 2 / auto / 12;
     padding: 10px 20px;
-    color: #fff; 
-    border-radius: 20px; 
-    background: linear-gradient(85deg,#434343,#262626); 
+    color: rgb(255, 255, 255);
+    background: inherit;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 10px 0px;
+    backdrop-filter: blur(100px);
+    border-radius: 0px 0px 26px 26px;
 }
 
 main {
@@ -162,7 +161,7 @@ th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: #c7a0eb;
     color: white;
 }
 
